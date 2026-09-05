@@ -1,12 +1,8 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// https://vitejs.dev
 export default defineConfig({
   plugins: [react()],
-  base: '/nawwar-arabic-learning-app/',
-  test: {
-    globals: true,
-    environment: 'jsdom',
-  },
+  base: '/nawwar-arabic-learning-app/', // <-- أضف هذا السطر هنا تماماً
 })
